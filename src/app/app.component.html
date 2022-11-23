@@ -3,7 +3,6 @@
   <input [(ngModel)]="description">
   <button (click)="addTodo()">Save</button>
 
-  {{todosLength}}
   <ul *ngFor="let todo of todos; let i = index">
     <li>{{todo.id}}</li>
     <li>{{todo.description}}</li>

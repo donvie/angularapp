@@ -28,10 +28,6 @@ export class AppComponent {
   ngOnInit() {
   }
 
-  todosLength () {
-    return this.todos.length
-  }
-
   addTodo () {
     this.todos.push({
       id: 1,
