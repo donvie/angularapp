@@ -1,0 +1,22 @@
+<div>
+  <h1>{{description}}</h1>
+  <input [(ngModel)]="description">
+  <button (click)="addTodo()">Save</button>
+
+  <ul *ngFor="let todo of todos; let i = index">
+    <li>{{todo.id}}</li>
+    <li>{{todo.description}}</li>
+    <li>{{todo.isCompleted}}</li>
+    <button (click)="removeTodo(i)">X</button>
+  </ul>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- <router-outlet></router-outlet> -->
